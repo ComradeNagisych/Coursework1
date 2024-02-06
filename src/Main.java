@@ -83,7 +83,7 @@ public class Main {
     }
     public static void prepareEmployeeNameList () {
         for (int i = 0; i < empArr.length; i++) {
-            System.out.println("Employees names: " +
+            System.out.println("Employees names are: " +
             empArr[i].getFirstName() + " " +
             empArr[i].getMiddleName() + " " +
             empArr[i].getLastName());
