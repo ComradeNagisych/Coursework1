@@ -7,14 +7,15 @@ public class Employee {
     private int department;
     private int salary;
     private int id;
+    static int empid = 1;
 
-    public Employee(String firstName, String middleName, String lastName, int department, int salary, int id) {
+    public Employee(String firstName, String middleName, String lastName, int department, int salary) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.department = department;
         this.salary = salary;
-        this.id = Main.empid++;
+        this.id = empid++;
     }
 
     public String getFirstName() {
@@ -69,7 +70,7 @@ public class Employee {
                 ", department = " + department +
                 ", salary = " + salary +
                 ", id = " + id +
-                "!}";
+                "}";
     }
 }
 
